@@ -1,80 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Finsweet</title>=
-     <link rel="stylesheet" href="style7.css">
-</head>
-<body>
-    <!-- Header -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style7.css" />
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <div class="logo">Finsweet</div>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="index2.html">Blog</a>
-                <a href="index4.html">About Us</a>
-                <a href="index7.html">Contact Us</a>
-                <a href="#" class="subscribe-btn">Subscribe</a>
-            </nav>
-            <a href="#" class="subscribe-btn">Subscribe</a>
-        </div>
+      <nav class="navbar">
+        <div class="logo">{Finsweet</div>
+        <button class="menu-toggle" id="mobile-menu">☰</button>
+        <!-- Backdrop -->
+        <div class="backdrop" id="backdrop">X</div>
+        <ul class="nav-list" id="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index2.html">Blog</a></li>
+          <li><a href="index4.html">About Us</a></li>
+          <li><a href="index8.html">Policy</a></li>
+          <li>
+            <a href="#email-input-sub" class="subscribe-btn">Subscribe</a>
+          </li>
+          <p id="thankYouMessage" class="message"></p>
+        </ul>
+      </nav>
     </header>
 
-    <!-- Contact Section -->
-    <section class="contact-section">
-        <h1>Let’s Start a Conversation</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eos expedita tempora reprehenderit et ab ratione.</p>
-
-        <div class="contact-info">
-            <div class="contact-card">
-                <h3>Working Hours</h3>
-                <p>Monday to Friday</p>
-                <p>9:00 AM to 6:00 PM</p>
-            </div>
-
-            <div class="contact-card">
-                <h3>Contact Info</h3>
-                <p>020 7993 2905</p>
-                <p>help@finsweet.com</p>
-            </div>
+    <div class="contact-section">
+      <h4>Contact us</h4>
+      <h1>Let’s Start a Conversation</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <!-- contact section -->
+      <div class="contact-info">
+        <div class="info-box">
+          <h4>Working Hours</h4>
+          <p>Monday To Friday<br />9:00 AM to 8:00 PM</p>
+          <p>Our Support Team is available 24/7</p>
         </div>
+        <div class="info-box">
+          <h4>Contact Us</h4>
+          <p>020 7993 2905<br />help@finsweet.com</p>
+        </div>
+      </div>
 
-        <form class="contact-form" id="contactForm">
-            <input type="text" id="fullName" placeholder="Full Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <select id="query">
-                <option value="" disabled selected>Query Related</option>
-                <option value="support">Support</option>
-                <option value="sales">Sales</option>
-                <option value="other">Other</option>
-            </select>
-            <textarea id="message" rows="5" placeholder="Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+      <form id="contact-form">
+        <input type="text" id="fullNameInput" placeholder="Full Name"/>
+        <input type="email" id="emailInput" placeholder="Your Email"/>
+        <select id="query-related">
+          <option value="General Query">General Query</option>
+          <option value="Support">Support</option>
+          <option value="Feedback">Feedback</option>
+        </select>
+        <textarea id="messageInput" placeholder="Message"></textarea>
+        <button id="sendMessageButton">Send Message</button>
+      </form>
+    </div>
 
-    <!-- Footer -->
+    <!-- Footer with Subscribe Section -->
     <footer>
-        <div class="container">
-            <div class="newsletter">
-                <p>Subscribe to our news letter to get latest updates and news</p>
-                <div>
-                    <input type="email" placeholder="Enter Your Email">
-                    <button>Subscribe</button>
-                </div>
-            </div>
-
-            <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="index2.html">Blog</a>
-                <a href="index4.html">About Us</a>
-                <a href="index7.html">Contact Us</a>
-                <a href="index8.html">Privacy Policy</a>
-            </div>
+      <div class="footer-content">
+        <p>Subscribe to our newsletter Get the latest updates and news</p>
+        <div class="subscribe-form">
+          <input
+            type="email"
+            id="email-input-sub"
+            placeholder="Enter Your Email"
+          />
+          <button id="subscribe-btn">Subscribe</button>
         </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Finsweet | Contact: hello@finsweet.com | 020 7993 2905</p>
+      </div>
     </footer>
-    <script src="script7.js"></script>
-</body>
+  </body>
+  <script src="script7.js"></script>
 </html>
