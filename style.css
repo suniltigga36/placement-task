@@ -6,7 +6,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
+  line-height: 1.6rem;
   background-color: #f9f9f9;
   color: #333;
 }
@@ -58,23 +58,62 @@ header {
 
 /* Hero Section */
 .hero {
-  background: url("https://via.placeholder.com/1920x600") center/cover no-repeat;
+  background-image: url('Client-First-IMAGES/man-in-black-suit-wearing-eye-glasses-sitting-on-gray-sofa-using-macbook-3772622.svg');
+  height: 90vh; 
+  width: 100%; 
+  background-size:cover;
   color: white;
-  text-align: center;
-  padding: 80px 20px;
+  padding-top: 6rem;
+  padding-left: 2vw;
+  line-height: 1.6;
+  display: flex;
+  justify-content: flex-start;
 }
 
-.hero-content h1 {
-  font-size: 2.5rem;
-  margin: 20px 0;
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content h1 pre {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  white-space: pre-wrap; /* Ensures wrapping of text inside <pre> */
+  margin: 10px 0;
+}
+
+.hero-content p {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.hero-content .name {
+  font-weight: bold;
+  color: #f2b531;
 }
 
 .hero-btn {
   background-color: orange;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 8px 20px;
   cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .hero
+
+  .hero-content h1 pre {
+    font-size: 1.2rem;
+  }
+
+  .hero-content p {
+    font-size: 0.8rem;
+  }
+
+  .hero-btn {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
 }
 
 /* Main Section */
@@ -84,7 +123,6 @@ header {
   padding: 20px;
 }
 
-.featured,
 .all-posts {
   flex: 1 1 45%;
   margin: 10px;
