@@ -58,10 +58,11 @@ header {
 
 /* Hero Section */
 .hero {
-  background-image: url('Client-First-IMAGES/man-in-black-suit-wearing-eye-glasses-sitting-on-gray-sofa-using-macbook-3772622.svg');
-  height: 90vh; 
-  width: 100%; 
-  background-size:cover;
+  background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),
+    url("Client-First-IMAGES/man-in-black-suit-wearing-eye-glasses-sitting-on-gray-sofa-using-macbook-3772622.svg");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
   color: white;
   padding-top: 6rem;
   padding-left: 2vw;
@@ -70,21 +71,24 @@ header {
   justify-content: flex-start;
 }
 
-.hero-content {
-  max-width: 600px;
+.hero .heading{
+  text-transform: uppercase;
+  letter-spacing:2px;
+}
+
+.hero .hero-content .heading h1 pre{
+  font-weight: bold;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 .hero-content h1 pre {
   font-size: 1.8rem;
-  line-height: 1.5;
   white-space: pre-wrap; /* Ensures wrapping of text inside <pre> */
-  margin: 10px 0;
 }
 
-.hero-content p {
-  margin: 10px 0;
-  line-height: 1.5;
-}
+/* .hero-content .para pre{
+  
+} */
 
 .hero-content .name {
   font-weight: bold;
@@ -99,10 +103,36 @@ header {
   cursor: pointer;
 }
 
-@media (max-width: 480px) {
-  .hero
+@media (max-width: 768px) {
+  .hero {
+    padding: 10vw;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+  }
 
   .hero-content h1 pre {
+    font-size: 1.5rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .hero-btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero{
+    padding-top: 6rem;
+  }
+
+  .hero .hero-content h1 pre {
     font-size: 1.2rem;
   }
 
@@ -341,6 +371,6 @@ footer form {
   z-index: 2; /* Make sure the menu stays above the blur */
 }
 
-.footer-up{
-  background-color:#f9f9f9;
+.footer-up {
+  background-color: #f9f9f9;
 }
