@@ -63,12 +63,14 @@ header {
   height: 100vh;
   width: 100%;
   background-size: cover;
+  overflow: hidden;
+}
+
+.hero-content{
   color: white;
-  padding-top: 6rem;
-  padding-left: 2vw;
+  padding-top: 7rem;
+  padding-left: 3vw;
   line-height: 1.6;
-  display: flex;
-  justify-content: flex-start;
 }
 
 .hero .heading{
@@ -85,10 +87,6 @@ header {
   font-size: 1.8rem;
   white-space: pre-wrap; /* Ensures wrapping of text inside <pre> */
 }
-
-/* .hero-content .para pre{
-  
-} */
 
 .hero-content .name {
   font-weight: bold;
@@ -118,7 +116,7 @@ header {
   }
 
   .hero-content p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .hero-btn {
@@ -129,7 +127,8 @@ header {
 
 @media (max-width: 480px) {
   .hero{
-    padding-top: 6rem;
+    padding-top: 3rem;
+    padding-left: 30px;
   }
 
   .hero .hero-content h1 pre {
@@ -137,7 +136,7 @@ header {
   }
 
   .hero-content p {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 
   .hero-btn {
@@ -162,6 +161,8 @@ header {
   background: #f9f9f9;
   border-radius: 8px;
   overflow: hidden;
+  margin-top: 1rem;
+  margin-right: 1vw;
 }
 
 .post-card img {
