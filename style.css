@@ -24,11 +24,6 @@ header {
   align-items: center;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
 .nav-list {
   list-style: none;
   display: flex;
@@ -60,8 +55,10 @@ header {
 .hero {
   background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),
     url("Client-First-IMAGES/man-in-black-suit-wearing-eye-glasses-sitting-on-gray-sofa-using-macbook-3772622.svg");
-  height: 100vh;
+  height: 90vh;
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
   background-size: cover;
   overflow: hidden;
 }
@@ -145,26 +142,56 @@ header {
     font-size: 0.8rem;
     padding: 6px 12px;
   }
+
+  .all-posts{
+    padding-top: 3rem;
+  }
+
 }
 
 /* Main Section */
 .main-content {
   display: flex;
   flex-wrap: wrap;
-  padding: 20px;
+  padding: 50px;
 }
 
 .all-posts {
-  flex: 1 1 45%;
-  margin: 10px;
+  margin: 0 20px;
+}
+
+.view{
+  text-decoration: none;
+  color: blue;
+  position: relative;
+  bottom: 1.6rem;
+  left: 100%;
+}
+
+.all-posts h4{
+  font-size: larger;
+}
+
+.all-posts p{
+  line-height: 2rem;
+}
+
+.points{
+  padding: 25px;
+}
+
+.points h6{
+  margin-top: 25px;
+  color: blue;
 }
 
 .post-card {
   background: #f9f9f9;
-  border-radius: 8px;
   overflow: hidden;
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-right: 1vw;
+  border: 2px lightgrey solid;
+  padding: 20px;
 }
 
 .post-card img {
@@ -177,13 +204,14 @@ header {
 
 .btn {
   display: inline-block;
-  background: #007bff;
-  color: white;
-  padding: 10px 15px;
+  background:yellow;
+  color: black;
+  padding: 10px 20px;
   margin-top: 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-weight: 600;
 }
 
 /* About Us */

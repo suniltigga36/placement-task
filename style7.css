@@ -23,11 +23,6 @@ header {
   align-items: center;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
 .nav-list {
   list-style: none;
   display: flex;

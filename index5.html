@@ -8,14 +8,21 @@
 </head>
 <body>
     <header>
-        <h1>Finsweet</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Blog</a>
-            <a href="#">About us</a>
-            <a href="#">Contact us</a>
-            <button class="btn-1">Subscribe</button>
-        </nav>
+        <nav class="navbar">
+            <div class="logo">
+        <img src="Client-First-IMAGES/Logo.svg" alt="logo">
+            </div>
+            <button class="menu-toggle" id="mobile-menu">☰</button>
+            <!-- Backdrop -->
+            <div class="backdrop" id="backdrop">X</div>
+            <ul class="nav-list" id="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#email-input" class="subscribe-btn">Subscribe</a></li>
+            </ul>
+    </nav>
     </header>
 
     <div class="container">
@@ -74,5 +81,6 @@
         </form>
         <p>&copy; 2024 Finsweet | All Rights Reserved</p>
     </footer>
+    <script src="script5.js"></script>
 </body>
 </html>

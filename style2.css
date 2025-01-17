@@ -1,7 +1,12 @@
-body {
+* {
+  padding: 0%;
   margin: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
+  line-height: 2rem;
 }
 
 /* Navigation Bar */
@@ -15,11 +20,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
 }
 
 .nav-list {
@@ -47,7 +47,6 @@ header {
   padding: 5px 20px;
   text-decoration: none;
   margin-left: 0px;
-  margin-right: 40px;
 }
 
 .btn-1 {
@@ -325,4 +324,10 @@ footer button {
 /* Update nav list to appear above the blur */
 .nav-list {
   z-index: 2; /* Make sure the menu stays above the blur */
+}
+
+.join-team button{
+  background-color: #f3b228;
+  border: none;
+  padding: 8px 25px;
 }

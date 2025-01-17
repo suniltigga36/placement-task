@@ -11,24 +11,44 @@ body {
   background-color: #f9f9f9;
 }
 
+/* Navigation Bar */
 header {
-  background-color: #222;
+  background-color: #0f0f0f;
   color: #fff;
   padding: 1rem 2rem;
+}
+
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-header h1 {
-  font-size: 1.5rem;
+.nav-list {
+  list-style: none;
+  display: flex;
 }
 
-header nav a {
+.nav-list li {
+  margin-left: 25px;
+}
+
+.nav-list a {
   color: #fff;
   text-decoration: none;
-  margin-left: 1rem;
-  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+  color: #f3b228;
+}
+
+.nav-list .subscribe-btn {
+  background: white;
+  color: #000;
+  padding: 5px 20px;
+  text-decoration: none;
+  margin-left: 0px;
 }
 
 .btn-1 {
@@ -160,4 +180,26 @@ footer button {
   header nav {
     margin-top: 1rem;
   }
+}
+
+/* Add a backdrop overlay */
+.backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(8px); /* Blur effect */
+  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent overlay */
+  z-index: 1;
+}
+
+.backdrop.active {
+  display: block;
+}
+
+/* Update nav list to appear above the blur */
+.nav-list {
+  z-index: 2; /* Make sure the menu stays above the blur */
 }
