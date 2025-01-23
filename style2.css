@@ -218,6 +218,7 @@ header {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 2rem;
+  padding-top: 2rem;
 }
 
 .category{
@@ -228,11 +229,8 @@ header {
   font-weight: bold;
 }
 
-.category2{
-  background: #ffd700;
-  padding: 20px 2rem;
-  border-radius: 8px;
-  font-weight: bold;
+.category:hover{
+  background-color:plum;
 }
 
 .join-team {

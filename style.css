@@ -5,9 +5,8 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6rem;
-  background-color: #f9f9f9;
   color: #333;
 }
 
@@ -40,20 +39,25 @@ header {
 }
 
 .nav-list a:hover {
-  color: #f3b228;
+  color: orange;
 }
 
 .nav-list .subscribe-btn {
   background: white;
   color: #000;
-  padding: 5px 20px;
+  padding: 10px 25px;
   text-decoration: none;
   margin-left: 0px;
 }
 
+.nav-list .subscribe-btn:hover {
+  background-color: red;
+  color: white;
+}
+
 /* Hero Section */
 .hero {
-  background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
     url("Client-First-IMAGES/man-in-black-suit-wearing-eye-glasses-sitting-on-gray-sofa-using-macbook-3772622.svg");
   height: 90vh;
   width: 100%;
@@ -63,37 +67,58 @@ header {
   overflow: hidden;
 }
 
-.hero-content{
+.hero-content {
   color: white;
-  padding-top: 7rem;
+  padding-top: 10rem;
   padding-left: 3vw;
+  line-height: 1rem;
 }
 
-.hero .heading{
+.hero .hero-content .heading {
   text-transform: uppercase;
-  letter-spacing:2px;
+  letter-spacing: 2px;
+  padding-bottom: 1rem;
 }
 
-.hero .hero-content .heading h1 pre{
+.hero .hero-content .heading h1 {
   font-weight: bold;
 }
 
 .hero-content h1 pre {
-  font-size: 1.8rem;
-  white-space: pre-wrap; /* Ensures wrapping of text inside <pre> */
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 550;
+  line-height: 3rem;
+  letter-spacing: 2px;
 }
 
 .hero-content .name {
   font-weight: bold;
-  color: #f2b531;
+  color: orange;
+  font-size: large;
+}
+
+.hero-content .para pre {
+  margin-top: 1rem;
+  font-family: "Arial Narrow", sans-serif;
+  letter-spacing: 1.5px;
+}
+
+.para {
+  position: relative;
+  bottom: 1.5rem;
 }
 
 .hero-btn {
   background-color: orange;
-  color: white;
+  color: black;
   border: none;
   padding: 8px 20px;
   cursor: pointer;
+}
+
+.hero-btn:hover {
+  outline: 2px solid black;
 }
 
 @media (max-width: 768px) {
@@ -121,8 +146,8 @@ header {
 }
 
 @media (max-width: 480px) {
-  .hero{
-    padding-top: 3rem;
+  .hero {
+    padding-top: 0.5rem;
     padding-left: 30px;
   }
 
@@ -134,7 +159,7 @@ header {
     font-size: 0.9rem;
   }
 
-  .hero .name{
+  .hero .name {
     font-size: 1rem;
   }
 
@@ -143,10 +168,10 @@ header {
     padding: 6px 12px;
   }
 
-  .all-posts{
-    padding-top: 3rem;
+  .lines img {
+    width: 5rem;
+    padding-left: 0%;
   }
-
 }
 
 /* Main Section */
@@ -160,7 +185,7 @@ header {
   margin: 0 20px;
 }
 
-.view{
+.view {
   text-decoration: none;
   color: blue;
   position: relative;
@@ -168,21 +193,25 @@ header {
   left: 100%;
 }
 
-.all-posts h4{
+.all-posts h4 {
   font-size: larger;
 }
 
-.all-posts p{
+.all-posts p {
   line-height: 2rem;
 }
 
-.points{
+.points {
   padding: 25px;
 }
 
-.points h6{
+.points h6 {
   margin-top: 25px;
   color: blue;
+}
+
+.line1 {
+  padding-left: 13rem;
 }
 
 .post-card {
@@ -204,58 +233,97 @@ header {
 
 .btn {
   display: inline-block;
-  background:yellow;
+  background: orange;
   color: black;
   padding: 10px 20px;
   margin-top: 10px;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
-  font-weight: 600;
 }
 
 /* About Us */
 .about {
-  text-align: center;
   padding: 20px;
   background: #eee;
+  font-size: larger;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  line-height: 2rem;
+  display: flex;
+  justify-content: space-around;
 }
 
-/* Categories */
-.categories {
-  text-align: center;
+.about div {
   padding: 20px;
 }
 
-.category-grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.about h2 {
+  padding-bottom: 2rem;
 }
 
-.category-card {
-  flex: 1 1 100px;
-  margin: 10px;
-  padding: 15px;
-  background: #ddd;
-  border-radius: 5px;
+.about p {
+  padding-bottom: 25px;
 }
 
-.highlight {
-  background-color: orange;
+.aboutbtn {
+  text-decoration: none;
+}
+
+.all {
+  margin: 3rem;
+}
+
+.all h1 {
+  text-align: center;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  padding-top: 2rem;
+}
+
+.category {
+  background: white;
+  padding: 20px 2rem;
+  border: 1px solid;
+  border-radius: 8px;
+  font-weight: bold;
+  justify-content: space-around;
+}
+
+.category:hover {
+  background-color: rgb(245, 188, 245);
 }
 
 /* Our Story */
 .our-story {
-  text-align: center;
-  padding: 20px;
-  background: #fff5e6;
+  line-height: 2.5rem;
+  padding: 40px;
+  width: 40%;
+  height: 70%;
+  background-color: white;
+  position: absolute;
+  left: 60%;
+  top: 380%;
+}
+
+.our-story h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  letter-spacing: 2px;
 }
 
 /* Authors */
 .authors {
   text-align: center;
-  padding: 20px;
+}
+
+.authors h2 {
+  padding: 3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .author-cards {
@@ -266,7 +334,7 @@ header {
 
 .author-card {
   margin: 10px;
-  padding: 10px;
+  padding: 20px;
   background: #f5f5f5;
   border-radius: 5px;
 }
@@ -276,11 +344,17 @@ header {
   width: 80px;
 }
 
-/* Testimonials */
-.testimonials {
-  background: #ffd580;
-  text-align: center;
-  padding: 20px;
+.author-card:hover {
+  background-color: rgb(255, 211, 211);
+}
+
+.social-image {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.social-image img {
+  margin: 5px; /* Adjust spacing */
 }
 
 /* Footer */
@@ -310,16 +384,12 @@ footer {
 .subscribe-form button {
   padding: 0.5rem 1rem;
   border: none;
-  background-color: #f2b531;
-  color: #fff;
+  background-color: red;
+  color: white;
   cursor: pointer;
   border-radius: 0 3px 3px 0;
   transition: background 0.3s;
   margin-left: 3px;
-}
-
-.subscribe-form button:hover {
-  background-color: #d79314;
 }
 
 .footer-bottom {
@@ -333,17 +403,12 @@ footer input[type="email"] {
   border: none;
 }
 
-footer button {
-  padding: 0.5rem 1rem;
-  background-color: #ff9800;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
-}
-
 footer form {
   margin: 1rem 0;
+}
+
+.subscribe-form button:hover {
+  background-color: rgb(211, 2, 2);
 }
 
 /* Mobile Menu Toggle */
@@ -405,18 +470,32 @@ footer form {
 .footer-up {
   background-color: #f9f9f9;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   text-align: center;
   margin-top: 20px;
 }
 
-.join-now{
-  background: #007bff;
+.join-now {
+  background: blue;
   color: white;
   padding: 10px 15px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   margin-top: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.join-now:hover {
+  background-color: rgb(0, 0, 222);
+}
+
+.group-photo img {
+  width: 70%;
+  object-fit: cover;
+  display: block;
+}
+
+.btn:hover {
+  outline: 2px black solid;
 }
