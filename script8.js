@@ -33,3 +33,9 @@ subscribeBtn.addEventListener("click", () => {
     emailInput.value = ""; // Clear the input field
   }
 });
+
+function setActive(element) {
+  let items = document.querySelectorAll('.policy');
+  items.forEach(item => item.classList.remove('active'));
+  element.classList.add('active');
+}

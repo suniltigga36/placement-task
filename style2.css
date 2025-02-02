@@ -6,8 +6,12 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  line-height: 2rem;
+  line-height: 1.6;
   color: #333;
+}
+
+.logo{
+  padding-top: 5px;
 }
 
 /* Navigation Bar */
@@ -285,6 +289,7 @@ header {
   border-radius: 8px;
   margin: 2rem 0;
 }
+
 /* Footer */
 footer {
   background-color: #0f0f0f;
@@ -296,6 +301,7 @@ footer {
 .subscribe-form {
   display: flex;
   justify-content: center;
+  margin-top: 10px;
 }
 
 .subscribe-form input {
@@ -312,11 +318,15 @@ footer {
   padding: 0.5rem 1rem;
   border: none;
   background-color: red;
-  color: white;
+  color: #fff;
   cursor: pointer;
   border-radius: 0 3px 3px 0;
   transition: background 0.3s;
   margin-left: 3px;
+}
+
+.subscribe-form button:hover {
+  background-color: #d50000;
 }
 
 .footer-bottom {
@@ -330,8 +340,17 @@ footer input[type="email"] {
   border: none;
 }
 
-.subscribe-form button:hover {
-  background-color: rgb(211, 2, 2);
+footer button {
+  padding: 0.5rem 1rem;
+  background-color: #ff9800;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+footer form {
+  margin: 1rem 0;
 }
 
 /* Mobile Menu Toggle */
