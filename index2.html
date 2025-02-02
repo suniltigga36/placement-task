@@ -5,40 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Blog Page</title>
     <link rel="stylesheet" href="style2.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap"
-      rel="stylesheet"/>
 </head>
-       
     </style>
 </head>
 <body>
     <header>
         <nav class="navbar">
-        <div class="logo">
+          <div class="logo">
             <img src="Client-First-IMAGES/Logo.svg" alt="logo">
-        </div>
-            <button class="menu-toggle" id="mobile-menu">☰</button>
-            <!-- Backdrop -->
-            <div class="backdrop" id="backdrop">X</div>
-            <ul class="nav-list" id="nav-list">
+          </div>
+          <button class="menu-toggle" id="mobile-menu">☰</button>
+          <!-- Backdrop -->
+          <div class="backdrop" id="backdrop">X</div>
+          <ul class="nav-list" id="nav-list">
             <li><a href="index.html">Home</a></li>
             <li><a href="index2.html">Blog</a></li>
-            <li><a href="index4.html">About us</a></li>
-            <li><a href="index7.html">Contact us</a></li>
+            <li><a href="index4.html">About Us</a></li>
+            <li><a href="index7.html">Contact Us</a></li>
             <li><a href="index8.html">Policy</a></li>
             <li><a href="#email-input" class="subscribe-btn">Subscribe</a></li>
-            </ul>
+          </ul>
         </nav>
-    </header>
-
+      </header>
     <section class="feature-post">
         <div class="feature-post-content">
             <h1>Featured Post</h1>
             <h2>Step-by-step guide to choosing great font pairs</h2>
+            <div class="para">
+            <p>By <span class="name">Jhon mark</span> | 10 Dec, 2024</p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut totam illo corrupti. Velit nemo saepe doloribus unde veritatis et dolores nostrum.</p>
+        </div>
             <a href="#" class="read-more">Read More ></a>
         </div>
         <div class="right">
@@ -134,13 +130,19 @@
             <button>Join now</button>
         </div>
 
-    <footer>
-        <p>Subscribe to our newsletter to get the latest updates and news</p>
-        <form>
-            <input type="email" placeholder="Enter your email">
-            <button type="submit">Subscribe</button>
-        </form>
-    </footer>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+          <p>Subscribe to our newsletter Get the latest updates and news</p>
+          <div class="subscribe-form">
+            <input type="email" id="email-input" placeholder="Enter Your Email"/>
+            <button id="subscribe-btn">Subscribe</button>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2024 Finsweet | Contact: hello@finsweet.com | 020 7993 2905</p>
+        </div>
+      </footer>
     <script src="script2.js"></script>
 </body>
 </html>

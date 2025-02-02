@@ -5,8 +5,9 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 2rem;
+  color: #333;
 }
 
 /* Navigation Bar */
@@ -28,7 +29,7 @@ header {
 }
 
 .nav-list li {
-  margin-left: 25px;
+  margin-left: 20px;
 }
 
 .nav-list a {
@@ -38,15 +39,20 @@ header {
 }
 
 .nav-list a:hover {
-  color: #f3b228;
+  color: orange;
 }
 
 .nav-list .subscribe-btn {
   background: white;
   color: #000;
-  padding: 5px 20px;
+  padding: 10px 25px;
   text-decoration: none;
   margin-left: 0px;
+}
+
+.nav-list .subscribe-btn:hover {
+  background-color: red;
+  color: white;
 }
 
 .btn-1 {
@@ -77,35 +83,66 @@ header {
 
 .feature-post img {
   max-width: 100%;
-  width: 500px; 
+  width: 500px;
 }
 
 .feature-post-content {
   max-width: 600px;
-  margin-right: 20vw;
   margin-left: 20px;
-  line-height: 25px;
 }
 
-.feature-post-content h1{
+.feature-post-content h1 {
   font-size: 20px;
   font-weight: 500;
   color: darkgray;
   text-transform: uppercase;
   letter-spacing: 2px;
+  padding-bottom: 10px;
 }
 
-.read-more{
-  background-color: rgb(255, 189, 68);
-  color:black;
+.feature-post-content h2 {
+  font-size: 1.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 550;
+  line-height: 3rem;
+  letter-spacing: 1.5px;
+}
+
+.feature-post-content p {
+  margin-top: 0.5rem;
+}
+
+.feature-post-content .para {
+  margin-bottom: 2rem;
+}
+
+.name {
+  font-size: 1rem;
+  color: blueviolet;
+  font-weight: 600;
+}
+
+.read-more {
+  background-color: orange;
+  color: black;
   border: none;
   padding: 8px 20px;
   cursor: pointer;
   text-decoration: none;
+  font-weight: 400;
+}
+
+.right {
+  padding-left: 21vw;
 }
 
 .posts {
   padding: 20px 60px;
+}
+
+.posts h1 {
+  padding: 3rem 0;
+  font-size: xx-large;
 }
 
 .post {
@@ -116,12 +153,11 @@ header {
   padding-bottom: 20px;
 }
 
-.post h3{
+.post h3 {
   color: blue;
-  text-transform:uppercase;
+  text-transform: uppercase;
   letter-spacing: 1px;
 }
-
 
 .post img {
   max-width: 100%;
@@ -157,12 +193,12 @@ header {
   cursor: pointer;
 }
 
-#Prev{
+#Prev {
   color: gray;
   text-decoration: none;
 }
 
-#Next{
+#Next {
   color: black;
   padding: 10px 15px;
   text-decoration: none;
@@ -170,22 +206,31 @@ header {
   font-size: large;
 }
 
-.pagination a:hover{
+.pagination a:hover {
   font-weight: 600;
-  font-style:italic;
+  font-style: italic;
 }
 
 @media (max-width: 480px) {
+  .logo {
+    padding-top: 10px;
+    padding-left: 10px;
+  }
 
-  .feature-post{
+  .feature-post {
     margin: 0%;
     padding: 0%;
   }
 
-  .feature-post img{
-    margin-top: 30px;
-    width: 92%;
-    margin-left: 20px;
+  .feature-post-content {
+    padding: 2.3rem;
+  }
+
+  .feature-post img {
+    width: 100%;
+    position: relative;
+    top: 10px;
+    right: 50px;
   }
 }
 
@@ -206,11 +251,11 @@ header {
   .post img {
     margin-right: 0;
     margin-bottom: 10px;
-    margin-top: 10px ;
+    margin-top: 10px;
   }
 }
 
-.all{
+.all {
   margin: 3rem;
 }
 
@@ -221,7 +266,7 @@ header {
   padding-top: 2rem;
 }
 
-.category{
+.category {
   background: white;
   padding: 20px 2rem;
   border: 1px solid;
@@ -229,8 +274,8 @@ header {
   font-weight: bold;
 }
 
-.category:hover{
-  background-color:plum;
+.category:hover {
+  background-color: plum;
 }
 
 .join-team {
@@ -240,32 +285,53 @@ header {
   border-radius: 8px;
   margin: 2rem 0;
 }
-
+/* Footer */
 footer {
-  background: #000;
+  background-color: #0f0f0f;
   color: #fff;
+  padding: 2rem;
   text-align: center;
-  padding: 1rem 0;
 }
 
-footer form {
-  margin-top: 1rem;
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+}
+
+.subscribe-form input {
+  padding: 0.5rem;
+  width: 250px;
+  border: none;
+  border-radius: 3px 0 0 3px;
+  -webkit-transition: 0.5s;
+  transition: 0.5;
+  outline: none;
+}
+
+.subscribe-form button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 3px 3px 0;
+  transition: background 0.3s;
+  margin-left: 3px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 0.9rem;
 }
 
 footer input[type="email"] {
   padding: 0.5rem;
   width: 70%;
-  max-width: 300px;
   border: none;
-  border-radius: 4px;
 }
 
-footer button {
-  padding: 0.5rem 1rem;
-  background: #ffd700;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+.subscribe-form button:hover {
+  background-color: rgb(211, 2, 2);
 }
 
 /* Mobile Menu Toggle */
@@ -324,8 +390,16 @@ footer button {
   z-index: 2; /* Make sure the menu stays above the blur */
 }
 
-.join-team button{
-  background-color: #f3b228;
+.join-team button {
+  background: blue;
+  color: white;
+  padding: 10px 15px;
   border: none;
-  padding: 8px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.join-team button:hover {
+  background-color: rgb(0, 0, 222);
 }
