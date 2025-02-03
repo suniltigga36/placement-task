@@ -89,17 +89,33 @@ pre{
   max-width: 600px;
   color: #555;
   position: relative;
-  bottom: 15%;
+  bottom: 13%;
+}
+
+.icons{
+  display: flex;
+  justify-content: center;
+  gap: 17px;
+  position: absolute;
+  top: 24rem;
+  left: 31.5%;
+}
+
+.icons img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  transition: background 0.3s ease-in-out;
 }
 
 /* Posts Section */
-.posts {
-  padding: 50px 20px;
-}
-
-.posts h2 {
-  margin-bottom: 30px;
-  text-align: center;
+.posts-container h2{
+  font-size: xx-large;
+  padding-top: 5rem;
+  padding-left: 13rem;
+  padding-bottom: 2rem;
 }
 
 .post {
@@ -107,6 +123,7 @@ pre{
   flex-wrap: wrap;
   gap: 20px;
   margin-bottom: 30px;
+  padding: 0 13rem;
 }
 
 .post img {
@@ -117,9 +134,17 @@ pre{
   flex: 2 1 300px;
 }
 
+.post .blue-heading{
+  color: blue;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
 .post-content h3 {
   margin: 0;
   color: #333;
+  font-size: x-large;
 }
 
 .post-content p {
@@ -267,4 +292,45 @@ footer input[type="email"] {
 /* Update nav list to appear above the blur */
 .nav-list {
   z-index: 2; /* Make sure the menu stays above the blur */
+}
+
+@media (max-width: 480px) {
+  .intro{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 10.5rem;
+    padding-bottom: 50px;
+    line-height: 2.5rem;
+  }
+
+  .intro p{
+    bottom: 25px;
+  }
+
+  .intro img{
+    position: relative;
+    right: 13%;
+  }
+
+  .icons{
+    top:48rem;
+    gap: 3rem;
+    left: 10.1rem;
+  }
+}
+
+.lines{
+  position: relative;
+  bottom: 1.4rem;
+}
+
+.lines .line1{
+  margin-left: 13rem;
+}
+
+.lines .line2{
+  position: relative;
+  right: 6px;
 }
