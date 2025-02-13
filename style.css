@@ -162,7 +162,7 @@ header {
 
   .hero-content {
     position: relative;
-    bottom: 25%;
+    bottom: 45%;
   }
 
   .hero .hero-content .heading{
@@ -194,11 +194,6 @@ header {
     padding: 6px 12px;
   }
 
-  .lines img {
-    width: 5rem;
-    padding-left: 0%;
-  }
-
   .all-posts{
     padding-top: 2rem;
     text-align: center;
@@ -215,9 +210,9 @@ header {
   }
 
   .lines img{
-    width: 70%;
+    width: 100%;
     position: relative;
-    left: 14%;
+    right: 20%;
   }
 
   .lines .line2{
@@ -274,7 +269,12 @@ header {
 }
 
 .line1 {
-  padding-left: 13rem;
+  padding-left: 12.5rem;
+}
+
+.line2 {
+  position: relative;
+  right: 12px;
 }
 
 .post-card {
@@ -540,11 +540,11 @@ footer form {
 }
 
 .footer-up {
-  background-color: #f9f9f9;
   display: flex;
   justify-content: center;
   text-align: center;
   margin-top: 20px;
+  font-size: 1.5rem;
 }
 
 .join-now {
